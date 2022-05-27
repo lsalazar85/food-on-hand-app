@@ -3,7 +3,7 @@
 Nearby restaurants search app developed with React.js, Typescript and Sass
 
 ## Deployment app
-
+https://food-on-hand-app.vercel.app/
 
 ## Run
 
