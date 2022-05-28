@@ -4,7 +4,6 @@ Nearby restaurants search app developed with React.js, Typescript and Sass
 
 ## Deployment app
 
-
 ## Run
 
 ```
@@ -32,3 +31,4 @@ Starts on `http://localhost:3000`
 - React Router
 - Jest & React testing library
 - Sass
+- Eslint & Prettier 
