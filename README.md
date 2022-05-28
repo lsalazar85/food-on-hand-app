@@ -32,4 +32,5 @@ Starts on `http://localhost:3000`
 - Redux & Redux Toolkit
 - Jest & React testing library
 - Sass
+- Eslint & Prettier
 - Axios
