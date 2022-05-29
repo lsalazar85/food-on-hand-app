@@ -1,7 +1,4 @@
 @forward 'base/_base';
-
-@forward 'layout/Header';
-@forward 'layout/Content';
-@forward 'layout/Footer';
-
-@forward 'components/UI/_Image';
+@forward 'layout/index';
+@forward "components/index";
+@forward 'pages/index';

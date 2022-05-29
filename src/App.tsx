@@ -1,7 +1,5 @@
-const App = () => (
-  <div>
-    <span>Home</span>
-  </div>
-);
+import { MainRouter } from './components/MainRouter';
+
+const App = () => <MainRouter />;
 
 export default App;
