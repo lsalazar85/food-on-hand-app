@@ -1,6 +1,7 @@
 @forward 'base/_base';
-@forward 'layout/_header';
-@forward 'layout/_footer';
 
+@forward 'layout/Header';
+@forward 'layout/Content';
+@forward 'layout/Footer';
 
 @forward 'components/UI/_Image';

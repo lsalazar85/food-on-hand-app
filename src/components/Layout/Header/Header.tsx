@@ -1,5 +1,5 @@
-import logo from '../../images/bettervet.svg';
-import { Image } from '../UI/Image';
+import logo from '../../../images/bettervet.svg';
+import { Image } from '../../UI/Image';
 
 const Header = () => (
   <header>

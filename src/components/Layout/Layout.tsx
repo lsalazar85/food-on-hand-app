@@ -1,4 +1,6 @@
-import { Header } from '../Header';
+import { Header } from './Header';
+import { Footer } from './Footer';
+import { Content } from './Content';
 
 interface props {
   children: JSX.Element | JSX.Element[];
@@ -7,7 +9,8 @@ interface props {
 const Layout = ({ children }: props) => (
   <main>
     <Header />
-    {children}
+    <Content>{children}</Content>
+    <Footer />
   </main>
 );
 

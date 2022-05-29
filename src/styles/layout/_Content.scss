@@ -1,0 +1,6 @@
+@use '../abstracts/_colors' as colors;
+
+.contentWrapper {
+  flex: 1 1 auto;
+  background: colors.$lightGray;
+}
