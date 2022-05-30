@@ -15,7 +15,7 @@ export interface ButtonProps {
 }
 
 export interface AddressState {
-  addressName: string;
+  addressName?: string;
   latitude: number;
   longitude: number;
 }

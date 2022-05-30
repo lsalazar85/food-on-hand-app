@@ -6,10 +6,16 @@ import Autocomplete from 'react-google-autocomplete';
 import { Button } from '../UI/Button';
 import { setAddress } from '../../redux/slices/address/addressSlice';
 
+import { AddressState } from '../../interfaces';
+
 const Search = () => {
+  const [location, setLocation] = useState<AddressState>({
+    latitude: 0,
+    longitude: 0,
+  });
   const dispatch = useDispatch();
-  const [location, setLocation] = useState({ lat: 0, lng: 0 });
   const navigate = useNavigate();
+
   const PLACES_API_KEY = process.env.REACT_APP_PLACES_API_KEY;
 
   return (
@@ -19,8 +25,8 @@ const Search = () => {
         apiKey={PLACES_API_KEY}
         onPlaceSelected={(place) => {
           setLocation({
-            lat: place.geometry.location.lat(),
-            lng: place.geometry.location.lng(),
+            latitude: place.geometry.location.lat(),
+            longitude: place.geometry.location.lng(),
           });
           dispatch(
             setAddress({
@@ -36,7 +42,7 @@ const Search = () => {
       />
       <Button
         text="Search"
-        onClick={() => navigate(`search/${location.lat}/${location.lng}`)}
+        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`)}
       />
     </div>
   );
