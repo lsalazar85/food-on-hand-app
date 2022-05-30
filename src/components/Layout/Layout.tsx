@@ -1,12 +1,9 @@
 import { Header } from './Header';
 import { Footer } from './Footer';
 import { Content } from './Content';
+import { ChildrenElement } from '../../interfaces';
 
-interface props {
-  children: JSX.Element | JSX.Element[];
-}
-
-const Layout = ({ children }: props) => (
+const Layout = ({ children }: ChildrenElement) => (
   <main>
     <Header />
     <Content>{children}</Content>

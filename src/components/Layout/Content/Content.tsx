@@ -1,8 +1,6 @@
-interface props {
-  children: JSX.Element | JSX.Element[];
-}
+import { ChildrenElement } from '../../../interfaces';
 
-const Content = ({ children }: props) => (
+const Content = ({ children }: ChildrenElement) => (
   <div className="contentWrapper">{children}</div>
 );
 

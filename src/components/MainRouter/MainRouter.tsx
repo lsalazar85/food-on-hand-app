@@ -8,7 +8,7 @@ const MainRouter = () => (
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/results/:latitude/:longitude" element={<MainList />} />
+      <Route path="/search/:latitude/:longitude" element={<MainList />} />
       <Route path="*" element={<PageNotFound />} />
     </Routes>
   </BrowserRouter>

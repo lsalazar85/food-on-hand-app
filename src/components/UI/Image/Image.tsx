@@ -1,13 +1,8 @@
-interface props {
-  width: string;
-  height: string;
-  src: string;
-  alt: string;
-}
+import { ImageProps } from '../../../interfaces';
 
 const Image = ({
   width, height, src, alt,
-}: props) => (
+}: ImageProps) => (
   <div
     style={{
       width: `${width}`,
