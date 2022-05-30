@@ -1,0 +1,36 @@
+@use '../abstracts/_colors' as colors;
+@use '../abstracts/_variables' as breakpoint;
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 auto;
+
+  span {
+    margin-right: 0.5rem;
+  }
+
+  a {
+    color: colors.$rose;
+    opacity: 0.5;
+    font-weight: 700;
+
+    &:hover{
+      opacity: 1;
+      transition: 1s;
+    }
+
+    @media (min-width: breakpoint.$breakpoint-mobile-xSmall) {
+      display: none;
+    }
+
+    @media (min-width: breakpoint.$breakpoint-desktop) {
+      display: flex;
+    }
+  }
+
+  @media (min-width: breakpoint.$breakpoint-mobile-xSmall) {
+    padding: 1rem;
+  }
+}

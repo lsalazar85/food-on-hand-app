@@ -1,0 +1,16 @@
+@use '../../abstracts/_colors' as colors;
+@use '../../abstracts/_variables' as breakpoint;
+
+.button {
+  background: colors.$rose;
+  padding: 0.5rem 3rem;
+  border-radius: 0.5rem;
+  color: colors.$white;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+    transition: 1s;
+  }
+}
