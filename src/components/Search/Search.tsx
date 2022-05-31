@@ -18,6 +18,12 @@ const Search = () => {
 
   const PLACES_API_KEY = process.env.REACT_APP_PLACES_API_KEY;
 
+  const handleClickNavigate = () => {
+    navigate(`search/${location.latitude}/${location.longitude}`, {
+      replace: true,
+    });
+  };
+
   return (
     <div className="search">
       <Autocomplete
@@ -42,9 +48,7 @@ const Search = () => {
       />
       <Button
         text="Search"
-        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`, {
-          replace: true,
-        })}
+        onClick={() => handleClickNavigate()}
       />
     </div>
   );
