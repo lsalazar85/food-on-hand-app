@@ -15,6 +15,7 @@ const useFetchCoordinatesData = (
 ) : State => {
   const [data, setData] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
+  const corsUrlHelper = 'https://cors-anywhere.herokuapp.com/';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -34,7 +35,7 @@ const useFetchCoordinatesData = (
 
       try {
         const { data: response } = await axios.get(
-          `${process.env.REACT_APP_URL_BASE}`,
+          `${corsUrlHelper}${process.env.REACT_APP_URL_BASE}`,
           config,
         );
         setData(response);
