@@ -6,7 +6,7 @@ const Card = ({
 }: CardProps) => (
   <li className="card">
     <span> Name: {name}</span>
-    <span> Phone Number: {phone}</span>
+    <span> Phone: {phone}</span>
     <span>{isClosed ? 'Open' : 'Closed'}</span>
     <span>Rating: {rating}</span>
     <button type="button" onClick={() => alert('hello')}>

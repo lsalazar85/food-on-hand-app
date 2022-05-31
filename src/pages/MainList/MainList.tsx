@@ -18,7 +18,6 @@ const MainList = () => {
     sortType,
     1000,
   );
-  const { businesses } = data;
 
   return (
     <div className="mainList">
@@ -48,7 +47,7 @@ const MainList = () => {
           </div>
           <p>Restaurants List</p>
           <ul className="listContent">
-            {businesses.map((item: any) => (
+            {data?.businesses.map((item: any) => (
               <Card
                 key={item.id}
                 name={item.name}
