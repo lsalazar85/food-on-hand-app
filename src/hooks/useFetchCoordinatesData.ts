@@ -1,18 +1,13 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
-
-type State = {
-  data: any
-  loading: boolean
-}
+import { StateType } from '../types';
 
 const useFetchCoordinatesData = (
   latitude: number,
   longitude: number,
   term: string,
-  sortType: string,
   radius: number,
-) : State => {
+) : StateType => {
   const [data, setData] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const corsUrlHelper = 'https://cors-anywhere.herokuapp.com/';
@@ -27,8 +22,8 @@ const useFetchCoordinatesData = (
           term: `${term}`,
           latitude: `${latitude}`,
           longitude: `${longitude}`,
-          sort_by: `${sortType}`,
           radius: `${radius}`,
+          sort_by: 'rating',
           limit: 50,
         },
       };
