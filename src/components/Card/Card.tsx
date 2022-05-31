@@ -17,7 +17,7 @@ const Card = ({ details }: CardProps) => {
       <Button text="More details" onClick={() => setShowModal((prevState) => !prevState)} />
       {showModal && (
         <Modal
-          title={`${name} details`}
+          title={`${name}`}
           show={showModal}
           onClose={() => setShowModal((prevState) => !prevState)}
           content={(
