@@ -6,7 +6,6 @@ const useFetchCoordinatesData = (
   latitude: number,
   longitude: number,
   term: string,
-  radius: number,
 ) : StateType => {
   const [data, setData] = useState<any>([]);
   const [loading, setLoading] = useState<boolean>(true);
@@ -22,8 +21,7 @@ const useFetchCoordinatesData = (
           term: `${term}`,
           latitude: `${latitude}`,
           longitude: `${longitude}`,
-          radius: `${radius}`,
-          sort_by: 'rating',
+          sort_by: 'review_count',
           limit: 50,
         },
       };

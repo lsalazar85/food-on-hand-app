@@ -12,6 +12,7 @@
 
   .title {
     display: flex;
+    justify-content: space-between;
 
     span {
       @media(min-width: breakpoint.$breakpoint-mobile-xSmall){

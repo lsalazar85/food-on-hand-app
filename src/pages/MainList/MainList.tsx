@@ -16,7 +16,6 @@ const MainList = () => {
     address?.latitude,
     address?.longitude,
     term,
-    1000,
   );
 
   return (

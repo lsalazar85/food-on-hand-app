@@ -42,7 +42,9 @@ const Search = () => {
       />
       <Button
         text="Search"
-        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`, { replace: true })}
+        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`, {
+          replace: true,
+        })}
       />
     </div>
   );

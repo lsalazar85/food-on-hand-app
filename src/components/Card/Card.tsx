@@ -24,10 +24,10 @@ const Card = ({ details }: CardProps) => {
             <div className="content">
               <Image width="260px" height="auto" src={image_url} alt={name} />
               <div className="details">
-                <span>Address: {location.address1}</span>
-                <span>City: {location.city}</span>
-                <span>Zip code: {location.zip_code}</span>
-                <span>Country: {location.country}</span>
+                <span>Address: {location?.address1}</span>
+                <span>City: {location?.city}</span>
+                <span>Zip code: {location?.zip_code}</span>
+                <span>Country: {location?.country}</span>
               </div>
             </div>
           )}
