@@ -25,14 +25,14 @@ const Search = () => {
         apiKey={PLACES_API_KEY}
         onPlaceSelected={(place) => {
           setLocation({
-            latitude: place.geometry.location.lat(),
-            longitude: place.geometry.location.lng(),
+            latitude: place?.geometry.location.lat(),
+            longitude: place?.geometry.location.lng(),
           });
           dispatch(
             setAddress({
-              addressName: place.formatted_address,
-              latitude: place.geometry.location.lat(),
-              longitude: place.geometry.location.lng(),
+              addressName: place?.formatted_address,
+              latitude: place?.geometry.location.lat(),
+              longitude: place?.geometry.location.lng(),
             }),
           );
         }}
@@ -42,7 +42,7 @@ const Search = () => {
       />
       <Button
         text="Search"
-        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`)}
+        onClick={() => navigate(`search/${location.latitude}/${location.longitude}`, { replace: true })}
       />
     </div>
   );

@@ -3,4 +3,5 @@
 .contentWrapper {
   flex: 1 1 auto;
   background: colors.$lightGray;
+  overflow-y: auto;
 }

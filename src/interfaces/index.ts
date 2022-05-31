@@ -14,6 +14,13 @@ export interface ButtonProps {
   onClick: () => void;
 }
 
+export interface CardProps {
+  name: string;
+  phone: number;
+  isClosed: boolean;
+  rating: number;
+}
+
 export interface AddressState {
   addressName?: string;
   latitude: number;

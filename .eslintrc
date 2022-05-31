@@ -23,7 +23,7 @@
     }
   },
   "rules": {
-    "max-len": ["error", { "code": 120 }],
+    "max-len": ["error", { "code": 160 }],
     "no-param-reassign": [2, {"props": false}],
     "import/prefer-default-export": "off",
     "import/extensions": [
@@ -53,9 +53,9 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
     "no-plusplus": "off",
-    "react/jsx-key": 1,
-    "react/no-array-index-key": "off"
+    "react/jsx-key": 1
   },
   "overrides": [
     {
