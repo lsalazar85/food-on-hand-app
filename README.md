@@ -21,6 +21,9 @@ The address coordinates are consumed from Google Places Api & <a href="https://g
 ## Deployment app
 https://food-on-hand-app.vercel.app/
 
+## Before run project 
+Go to <a href="https://cors-anywhere.herokuapp.com/corsdemo" target="_blank">Cors Anywhere</a> & and click on "Request temporary access to the demo server" for to access the Yelp Fusion Api
+
 ## Run
 
 ```
@@ -32,6 +35,7 @@ https://food-on-hand-app.vercel.app/
     yarn install
     yarn run start
 ```
+
 
 Starts on `http://localhost:3000`
 
