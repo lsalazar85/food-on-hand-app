@@ -8,4 +8,4 @@ export type Location = {
   city: string
   zip_code: string
   country: string
-}
+};

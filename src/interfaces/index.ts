@@ -21,6 +21,8 @@ export interface CardElements {
   name: string;
   phone: number;
   is_closed: boolean;
+  review_count: string,
+  distance: number,
   rating: number;
   image_url: string;
   location: Location;

@@ -7,6 +7,8 @@ describe('Card', () => {
       id: '123',
       name: 'Name',
       phone: 12344556,
+      distance: 1.200,
+      review_count: '40',
       is_closed: true,
       rating: 4.5,
       image_url: 'https://',
