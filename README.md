@@ -12,7 +12,7 @@ option for a project that is going to real formal production.
 
 The address coordinates are consumed from Google Places Api & <a href="https://github.com/ErrorPro/react-google-autocomplete#readme" target="_blank">React Google Autocomplete</a>
 
-###Future improvements
+### Future improvements
 
 - Add a filter not only to view restaurants, the api also gives the option to query different types of businesses, food types, delivery option, etc.
 - Implement the Search component in the restaurants list.
