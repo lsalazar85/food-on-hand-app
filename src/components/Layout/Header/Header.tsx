@@ -9,7 +9,7 @@ const Header = () => (
       <Image width="5rem" height="auto" src={logo} alt="BetterVet Logo" />
     </div>
     <div className="headerSide">
-      <span>Find restaurants by city or country</span>
+      <span>Find restaurants by your favorite location</span>
     </div>
   </header>
 );

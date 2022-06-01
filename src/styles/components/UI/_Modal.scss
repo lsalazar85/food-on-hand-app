@@ -1,0 +1,116 @@
+@use '../../abstracts/_variables' as breakpoint;
+@use '../../abstracts/_colors' as colors;
+
+.modalWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: 200ms;
+  opacity: 1;
+  z-index: 120;
+  width: 100vw;
+  height: 100vh;
+
+  .modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: colors.$overlayBG;
+    animation: fadeIn 0.2s ease-in-out;
+    z-index: 120;
+  }
+
+  .mainModal {
+    display: flex;
+    flex-direction: column;
+    z-index: 130;
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: colors.$lightGray;
+    box-shadow: colors.$boxShadow;
+    border-radius: 8px;
+
+    @media(min-width: breakpoint.$breakpoint-mobile-xSmall){
+      width: 95%;
+    }
+
+    @media(min-width: breakpoint.$breakpoint-tablet){
+      width: 40rem;
+    }
+  }
+
+  .modalHeader {
+    flex: 0 0 auto;
+    align-items: center;
+    color: colors.$mainColor;
+    padding: 32px;
+    h3 {
+      font-size: 1.5em;
+      margin: 0;
+    }
+  }
+
+  .closeIcon{
+    width: 1em;
+    height: 1em;
+    cursor: pointer;
+    position: absolute;
+    right: 32px;
+    top: 42px;
+    color: colors.$mainColor;
+    font-weight: 700;
+  }
+
+  .modalContent{
+    flex: 1 1 auto;
+    color: colors.$mainColor;
+    padding: 0 32px;
+    position: relative;
+    &::-webkit-scrollbar {
+      width: 0;
+      background: transparent;
+    }
+    p {
+      margin: 0;
+    }
+
+    .content {
+      display: flex;
+      padding-bottom: 2rem;
+
+      @media(min-width: breakpoint.$breakpoint-mobile-xSmall){
+        flex-direction: column;
+      }
+
+      @media(min-width: breakpoint.$breakpoint-tablet){
+        flex-direction: row;
+      }
+
+      .details {
+        display: flex;
+        flex-direction: column;
+        margin-left: 1rem;
+
+        @media(min-width: breakpoint.$breakpoint-mobile-xSmall){
+          margin-left: 0;
+        }
+
+        @media(min-width: breakpoint.$breakpoint-tablet){
+          margin-left: 1rem;
+        }
+
+        span {
+          line-height: 2;
+
+          &:last-child {
+            font-style: italic;
+          }
+        }
+      }
+    }
+  }
+}

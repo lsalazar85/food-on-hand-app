@@ -1,8 +1,6 @@
 import { ImageProps } from '../../../interfaces';
 
-const Image = ({
-  width, height, src, alt,
-}: ImageProps) => (
+const Image = ({ width, height, src, alt }: ImageProps) => (
   <div
     style={{
       width: `${width}`,

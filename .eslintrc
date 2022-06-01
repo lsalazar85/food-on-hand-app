@@ -23,9 +23,15 @@
     }
   },
   "rules": {
+    "camelcase": "off",
     "max-len": ["error", { "code": 120 }],
-    "no-param-reassign": [2, {"props": false}],
     "import/prefer-default-export": "off",
+    "object-curly-newline": ["error", {
+      "ObjectExpression": "always",
+      "ObjectPattern": { "multiline": true },
+      "ImportDeclaration": "never",
+      "ExportDeclaration": { "multiline": true, "minProperties": 3 }
+    }],
     "import/extensions": [
       "error",
       "ignorePackages",
@@ -53,6 +59,7 @@
     "react/react-in-jsx-scope": "off",
     "react/jsx-filename-extension": "off",
     "react/jsx-props-no-spreading": "off",
+    "react/jsx-one-expression-per-line": "off",
     "no-plusplus": "off",
     "react/jsx-key": 1,
     "react/no-array-index-key": "off"
